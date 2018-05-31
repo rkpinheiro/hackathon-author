@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+	<script src="https://unpkg.com/grapesjs"></script>
+  </head>
+  <body>
+	<div id="gjs"></div>
+    <script type="text/javascript">
+	  var editor = grapesjs.init({
+	      container : '#gjs',
+	      components: '<div class="txt-red">Hello world!</div>',
+	      style: '.txt-red{color: red}',
+	  });
+	  var blockManager = editor.BlockManager;
+
+	// 'my-first-block' is the ID of the block
+	blockManager.add('my-first-block', {
+	  label: 'Simple block',
+	  content: '<div class="my-block">This is a simple block</div>',
+	});
+	</script>
+  </body>
+</html>
