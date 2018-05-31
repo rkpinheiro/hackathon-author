@@ -12,3 +12,19 @@ function component() {
 }
 
 document.body.appendChild(component());
+var editor = grapesjs.init({
+  container : '#gjs',
+  plugins: ['gjs-blocks-basic'],
+  pluginsOpts: {
+    'gjs-blocks-basic': {/* ...options */}
+  },
+  components: '<div class="txt-red">Hello world!</div>',
+  style: '',
+});
+var blockManager = editor.BlockManager;
+
+/**BLOCOS */
+blockManager.add('Título 1', {
+label: 'Título 1',
+content: '<h1>Título 1</h1>',
+});
