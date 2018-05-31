@@ -7,15 +7,15 @@ export default grapesjs.plugins.add('gjs-blocks-basic', (editor, opts = {}) => {
     stylePrefix: 'gjs-',
     addBasicStyle: true,
     category: 'Basic',
-    labelColumn1: '1 Column',
-    labelColumn2: '2 Columns',
-    labelColumn3: '3 Columns',
-    labelColumn37: '2 Columns 3/7',
-    labelText: 'Text',
+    labelColumn1: '1 Coluna',
+    labelColumn2: '2 Colunas',
+    labelColumn3: '3 Colunas',
+    labelColumn37: '2 Colunas 3/7',
+    labelText: 'Texto',
     labelLink: 'Link',
-    labelImage: 'Image',
+    labelImage: 'Imagem',
     labelVideo: 'Video',
-    labelMap: 'Map',
+    labelMap: 'Mapa',
     ...opts
   };
 
